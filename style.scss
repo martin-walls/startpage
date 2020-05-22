@@ -1,0 +1,45 @@
+$font-stack: 'Source Code Pro', monospace;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 10rem;
+    margin-bottom: 100px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+        margin-right: 50px;
+        text-decoration: none;
+        color: #212121;
+        font-family: $font-stack;
+        font-weight: bold;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
