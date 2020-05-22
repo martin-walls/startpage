@@ -17,6 +17,8 @@ $color-iplayer-hover: #067eb3c0;
 
 $link-spacing-hor: 30px;
 
+$hover-fade-duration: .2s;
+
 @mixin transition($property) {
     -moz-transition: $property;
     -o-transition: $property;
@@ -42,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include transition(background-color .2s ease-in);
+    @include transition(background-color $hover-fade-duration ease-in);
 }
 
 .flex-wrapper {
@@ -56,7 +58,7 @@ body {
     margin-bottom: 35px;
     font-family: $font-stack;
     color: $text-color;
-    @include transition(color .2s ease-in);
+    @include transition(color $hover-fade-duration ease-in);
     cursor: default;
 
     display: flex;
@@ -88,7 +90,7 @@ body {
         padding: 8px 12px;
         border-radius: 8px;
 
-        @include transition(all .2s ease-in);
+        @include transition(all $hover-fade-duration ease-in);
 
         &:last-child {
             margin-right: 0;

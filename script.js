@@ -23,25 +23,25 @@ function leftPadZeroes(x) {
 
 $(document).ready(function() {
     $("#link-reddit").hover(function() {
-        $(".bg").css("background-color", "#ff4500c0");
+        $(".bg").css("background-color", "#ff450080");
     });
     
     $("#link-youtube").hover(function() {
-        $(".bg").css("background-color", "#ff0000c0");
+        $(".bg").css("background-color", "#ff000080");
     });
     
     $("#link-github").hover(function() {
-        $(".bg").css("background-color", "#24292ec0");
+        $(".bg").css("background-color", "#24292eff");
         // $(".time").css("color", "#1e1e1e");
         // $(this).css("color", "#1e1e1e");
     });
     
     $("#link-pocket").hover(function() {
-        $(".bg").css("background-color", "#ef4056c0");
+        $(".bg").css("background-color", "#ef4056a0");
     });
     
     $("#link-iplayer").hover(function() {
-        $(".bg").css("background-color", "#067eb3c0");
+        $(".bg").css("background-color", "#067eb3a0");
     });
 
     $("a").mouseleave(function() {
