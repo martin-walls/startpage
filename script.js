@@ -1,3 +1,5 @@
+$(window).on("load", startTime);
+
 function startTime() {
     var today = new Date();
     var hr = today.getHours();
@@ -17,3 +19,33 @@ function leftPadZeroes(x) {
     }
     return x;
 }
+
+$(document).ready(function() {
+    $("#link-reddit").hover(function() {
+        $(".bg").css("background-color", "#ff4500c0");
+    });
+    
+    $("#link-youtube").hover(function() {
+        $(".bg").css("background-color", "#ff0000c0");
+    });
+    
+    $("#link-github").hover(function() {
+        $(".bg").css("background-color", "#ffffffc0");
+        $(".time").css("color", "#1e1e1e");
+        $(this).css("color", "#1e1e1e");
+    });
+    
+    $("#link-pocket").hover(function() {
+        $(".bg").css("background-color", "#ef4056c0");
+    });
+    
+    $("#link-iplayer").hover(function() {
+        $(".bg").css("background-color", "#067eb3c0");
+    });
+
+    $("a").mouseleave(function() {
+        $(".bg").css("background-color", "#0000");
+        $(".time").css("color", "#fff");
+        $(this).css("color", "#fff");
+    });
+});
