@@ -8,8 +8,8 @@ $color-reddit: #ff450060;
 $color-reddit-hover: #ff4500c0;
 $color-youtube: #ff000060;
 $color-youtube-hover: #ff0000c0;
-$color-github: #ffffff60;
-$color-github-hover: #ffffffc0;
+$color-github: #ffffff40;
+$color-github-hover: #ffffffa0;
 $color-pocket: #ef405660;
 $color-pocket-hover: #ef4056c0;
 $color-iplayer: #067eb360;
@@ -53,12 +53,23 @@ body {
 }
 
 .time {
-    font-size: 10rem;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-family: $font-stack;
     color: $text-color;
-    cursor: default;
     @include transition(color .2s ease-in);
+    cursor: default;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .time-digits {
+        font-size: 10rem;
+    }
+
+    .time-separator {
+        font-size: 8rem;
+    }
 }
 
 .links {
@@ -77,8 +88,7 @@ body {
         padding: 8px 12px;
         border-radius: 8px;
 
-        @include transition(background-color .2s ease-in);
-        @include transition(color .2s ease-in);
+        @include transition(all .2s ease-in);
 
         &:last-child {
             margin-right: 0;

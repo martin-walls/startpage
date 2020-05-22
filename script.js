@@ -8,7 +8,8 @@ function startTime() {
     hr = leftPadZeroes(hr);
     min = leftPadZeroes(min);
 
-    document.getElementById("time").innerHTML = hr + ":" + min;
+    document.getElementById("time-hr").innerHTML = hr;
+    document.getElementById("time-min").innerHTML = min;
 
     var t = setTimeout(startTime, 1000);
 }
@@ -30,9 +31,9 @@ $(document).ready(function() {
     });
     
     $("#link-github").hover(function() {
-        $(".bg").css("background-color", "#ffffffc0");
-        $(".time").css("color", "#1e1e1e");
-        $(this).css("color", "#1e1e1e");
+        $(".bg").css("background-color", "#24292ec0");
+        // $(".time").css("color", "#1e1e1e");
+        // $(this).css("color", "#1e1e1e");
     });
     
     $("#link-pocket").hover(function() {
