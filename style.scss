@@ -1,7 +1,7 @@
 $font-stack: 'Source Code Pro', monospace;
 
 $dark-bg: #1e1e1e;
-$text-color: #fff;
+$light-text: #fff;
 
 // site colours
 $color-reddit: #ff450060;
@@ -57,7 +57,7 @@ body {
 .time {
     margin-bottom: 35px;
     font-family: $font-stack;
-    color: $text-color;
+    color: $light-text;
     @include transition(color $hover-fade-duration ease-in);
     cursor: default;
 
@@ -74,6 +74,25 @@ body {
     }
 }
 
+.search-form {
+    background-color: #fff3;
+    border-radius: 8px;
+    width: 60vw;
+    max-width: 700px;
+    margin-bottom: 80px;
+
+    .search-field {
+        background: none;
+        outline: none;
+        border: none;
+        font-family: $font-stack;
+        color: $light-text;
+        padding: 8px 20px;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
 .links {
     display: flex;
     flex-direction: row;
@@ -84,7 +103,7 @@ body {
     a {
         margin-right: $link-spacing-hor;
         text-decoration: none;
-        color: $text-color;
+        color: $light-text;
         font-family: $font-stack;
         font-weight: bold;
         padding: 8px 12px;
