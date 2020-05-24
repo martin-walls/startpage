@@ -75,6 +75,9 @@ body {
 }
 
 .search-form {
+    // hide search bar
+    display: none;
+    
     background-color: #fff3;
     border-radius: 8px;
     width: 60vw;
