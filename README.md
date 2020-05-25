@@ -6,7 +6,7 @@
 
 ```javascript
 // first line must be a comment
-pref("generat.config.filename", "firefox.cfg");
+pref("general.config.filename", "firefox.cfg");
 pref("general.config.obscure_value", 0);
 pref("general.config.sandbox_enabled", false);
 ```
@@ -26,3 +26,13 @@ try {
 ```
 
 (`firefox.cfg` can be any name `.cfg` file, but must be in `/usr/lib/firefox/` directory)
+
+
+
+(On Windows, replace `/usr/lib/firefox` with `C:\Program Files\Mozilla Firefox`)
+
+
+
+
+
+`style.scss` must first be compiled to `style.css` with Sass.
