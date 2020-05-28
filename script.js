@@ -49,4 +49,20 @@ $(document).ready(function() {
         $(".time").css("color", "#fff");
         $(this).css("color", "#fff");
     });
+
+    $(document).on("keyup", function(e) {
+        if (e.keyCode === 49) {
+            // [0] is needed to trigger the click event on the text inside the tag
+            //     instead of the tag itself, which doesn't work
+            $("#link-reddit")[0].click();
+        } else if (e.keyCode === 50) {
+            $("#link-youtube")[0].click();
+        } else if (e.keyCode === 51) {
+            $("#link-github")[0].click();
+        } else if (e.keyCode === 52) {
+            $("#link-pocket")[0].click();
+        } else if (e.keyCode === 53) {
+            $("#link-iplayer")[0].click();
+        }
+    });
 });
