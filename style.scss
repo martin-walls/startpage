@@ -1,4 +1,4 @@
-$font-stack: 'Source Code Pro', monospace;
+$font-stack: "Source Code Pro", monospace;
 
 $dark-bg: #1e1e1e;
 $light-text: #fff;
@@ -12,150 +12,150 @@ $color-github: #ffffff40;
 $color-github-hover: #ffffffa0;
 $color-pocket: #ef405660;
 $color-pocket-hover: #ef4056c0;
-$color-iplayer: #067eb360;
-$color-iplayer-hover: #067eb3c0;
+$color-disney: #067eb360;
+$color-disney-hover: #067eb3c0;
 
 $link-spacing-hor: 30px;
 
-$hover-fade-duration: .2s;
+$hover-fade-duration: 0.2s;
 
 @mixin transition($property) {
-    -moz-transition: $property;
-    -o-transition: $property;
-    -webkit-transition: $property;
-    transition: $property;
+  -moz-transition: $property;
+  -o-transition: $property;
+  -webkit-transition: $property;
+  transition: $property;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: $dark-bg;
+  height: 100vh;
+  width: 100vw;
+  background-color: $dark-bg;
 }
 
 .bg {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include transition(background-color $hover-fade-duration ease-in);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include transition(background-color $hover-fade-duration ease-in);
 }
 
 .flex-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .time {
-    margin-bottom: 35px;
-    font-family: $font-stack;
-    color: $light-text;
-    @include transition(color $hover-fade-duration ease-in);
-    cursor: default;
+  margin-bottom: 35px;
+  font-family: $font-stack;
+  color: $light-text;
+  @include transition(color $hover-fade-duration ease-in);
+  cursor: default;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    .time-digits {
-        font-size: 10rem;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    .time-separator {
-        font-size: 8rem;
-    }
+  .time-digits {
+    font-size: 10rem;
+  }
+
+  .time-separator {
+    font-size: 8rem;
+  }
 }
 
 .search-form {
-    // hide search bar
-    display: none;
-    
-    background-color: #fff3;
-    border-radius: 8px;
-    width: 60vw;
-    max-width: 700px;
-    margin-bottom: 80px;
+  // hide search bar
+  display: none;
 
-    .search-field {
-        background: none;
-        outline: none;
-        border: none;
-        font-family: $font-stack;
-        color: $light-text;
-        padding: 8px 20px;
-        font-size: 1rem;
-        width: 100%;
-    }
+  background-color: #fff3;
+  border-radius: 8px;
+  width: 60vw;
+  max-width: 700px;
+  margin-bottom: 80px;
+
+  .search-field {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: $font-stack;
+    color: $light-text;
+    padding: 8px 20px;
+    font-size: 1rem;
+    width: 100%;
+  }
 }
 
 .links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    // move time and links up a bit
-    padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // move time and links up a bit
+  padding-bottom: 150px;
 
-    a {
-        margin-right: $link-spacing-hor;
-        text-decoration: none;
-        color: $light-text;
-        font-family: $font-stack;
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 8px;
+  a {
+    margin-right: $link-spacing-hor;
+    text-decoration: none;
+    color: $light-text;
+    font-family: $font-stack;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
 
-        @include transition(all $hover-fade-duration ease-in);
+    @include transition(all $hover-fade-duration ease-in);
 
-        &:last-child {
-            margin-right: 0;
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
 }
 
 #link-reddit {
-    background-color: $color-reddit;
+  background-color: $color-reddit;
 
-    &:hover {
-        background-color: $color-reddit-hover;
-    }
+  &:hover {
+    background-color: $color-reddit-hover;
+  }
 }
 
 #link-youtube {
-    background-color: $color-youtube;
+  background-color: $color-youtube;
 
-    &:hover {
-        background-color: $color-youtube-hover;
-    }
+  &:hover {
+    background-color: $color-youtube-hover;
+  }
 }
 
 #link-github {
-    background-color: $color-github;
+  background-color: $color-github;
 
-    &:hover {
-        background-color: $color-github-hover;
-    }
+  &:hover {
+    background-color: $color-github-hover;
+  }
 }
 
 #link-pocket {
-    background-color: $color-pocket;
+  background-color: $color-pocket;
 
-    &:hover {
-        background-color: $color-pocket-hover;
-    }
+  &:hover {
+    background-color: $color-pocket-hover;
+  }
 }
 
-#link-iplayer {
-    background-color: $color-iplayer;
+#link-disney {
+  background-color: $color-disney;
 
-    &:hover {
-        background-color: $color-iplayer-hover;
-    }
+  &:hover {
+    background-color: $color-disney-hover;
+  }
 }
