@@ -36,7 +36,7 @@ $(document).ready(function () {
     // $(this).css("color", "#1e1e1e");
   });
 
-  $("#link-pocket").hover(function () {
+  $("#link-drive").hover(function () {
     $(".bg").css("background-color", "#ef4056a0");
   });
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
     } else if (e.keyCode === 51) {
       $("#link-github")[0].click();
     } else if (e.keyCode === 52) {
-      $("#link-pocket")[0].click();
+      $("#link-drive")[0].click();
     } else if (e.keyCode === 53) {
       $("#link-disney")[0].click();
     }

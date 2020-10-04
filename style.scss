@@ -10,8 +10,8 @@ $color-youtube: #ff000060;
 $color-youtube-hover: #ff0000c0;
 $color-github: #ffffff40;
 $color-github-hover: #ffffffa0;
-$color-pocket: #ef405660;
-$color-pocket-hover: #ef4056c0;
+$color-drive: #ef405660; // TODO update these colours for new sites
+$color-drive-hover: #ef4056c0;
 $color-disney: #067eb360;
 $color-disney-hover: #067eb3c0;
 
@@ -144,11 +144,11 @@ body {
   }
 }
 
-#link-pocket {
-  background-color: $color-pocket;
+#link-drive {
+  background-color: $color-drive;
 
   &:hover {
-    background-color: $color-pocket-hover;
+    background-color: $color-drive-hover;
   }
 }
 
