@@ -11,7 +11,7 @@ function startTime() {
   document.getElementById("time-hr").innerHTML = hr;
   document.getElementById("time-min").innerHTML = min;
 
-  var t = setTimeout(startTime, 1000);
+  setTimeout(startTime, 1000);
 }
 
 function leftPadZeroes(x) {
